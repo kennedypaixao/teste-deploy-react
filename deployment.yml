@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portal-relatorios-application
+  labels:
+    app: portal-relatorios-application
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: portal-relatorios-application
+  template:
+    metadata:
+      labels:
+        app: portal-relatorios-application
+    spec:
+      containers:
+        - name: portal-relatorios-application
+          image: node:latest
+          envFrom:
+            - configMapRef:
+                name: portal-relatorios-application-config
+          livenessProbe:
+            httpGet:
+              path: /portal-relatorios
+              port: 80
+            initialDelaySeconds: 60
+            periodSeconds: 15
+          readinessProbe:
+            httpGet:
+              path: /portal-relatorios
+              port: 80
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: portal-relatorios-application
+  name: portal-relatorios-application-service
+spec:
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  selector:
+    app: portal-relatorios-application
+  type: NodePort

@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins-Regular, Poppins-Medium, Poppins-Bold, Poppins-SemiBold;
+}
+
+:root {
+  --neutralLightPure: #fff;
+  --neutralLight01: #f4f5f7;
+  --neutralLight02: #f5f3f3;
+
+  --neutralDarkPure: #333;
+
+  --brand-purple-dark: #541d5e;
+  --brand-purple: #a64bf4;
+  --brand-purple-light: #d6c9eb;
+
+  --brand-primary: #0086ff;
+
+  --brand-green: #81b141;
+
+  --brand-gradient: linear-gradient(90deg, rgba(0,219,222,1) 0%, rgba(252,0,255,1) 35%, rgba(0,219,222,1) 70%, rgba(252,0,255,1) 100%);
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+@import 'bootstrap/dist/css/bootstrap.min.css';

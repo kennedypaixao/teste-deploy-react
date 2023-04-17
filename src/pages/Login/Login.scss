@@ -1,0 +1,68 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/image/bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .card {
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+    background: var(--neutralLightPure);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-right: 55px;
+    padding-left: 55px;
+    padding-bottom: 54px;
+    padding-top: 40px;
+    position: relative;
+    top: 80px;
+    min-width: 400px;
+    width: 30%;
+
+    .brand-title {
+      display: block;
+      font-size: 21px;
+      color: var(--neutralDarkPure);
+      line-height: 1.2;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .title {
+      display: block;
+      font-size: 39px;
+      color: var(--neutralDarkPure);
+      line-height: 1.2;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+
+    .formLogin {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 26vh;
+      min-height: 230px;
+
+      .forgotPassword {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .login {
+        button {
+          width: 100%;
+          border-radius: 21px;
+          background-color: #0086ff;
+
+          &:hover {
+            background-color: #0276df;
+          }
+        }
+      }
+    }
+  }
+}

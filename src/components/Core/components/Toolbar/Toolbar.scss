@@ -1,0 +1,40 @@
+.Toolbar {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--neutralLightPure);
+  display: flex;
+  border-bottom: 2px solid;
+  border-bottom-color: var(--brand-primary);
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+
+  .btn-menu {
+    border: none;
+    background-color: transparent;
+    color: var(--brand-primary);
+    cursor: pointer;
+  }
+
+  .page-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--neutralDarkPure);
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  .btnClose {
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    color: var(--brand-primary);
+    cursor: pointer;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

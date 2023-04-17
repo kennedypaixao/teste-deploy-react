@@ -1,0 +1,17 @@
+@import '~react-pro-sidebar/dist/scss/styles.scss';
+
+.Sidebar-Menu {
+  height: 100%;
+  
+  .pro-sidebar {
+    color: var(--neutralLightPure);
+  }
+
+  .pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+    background-color: rgb(255 255 255 / 12%);
+  }
+  .pro-sidebar .pro-menu.shaped .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+    background-color:  transparent;
+  }
+
+}

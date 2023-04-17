@@ -1,0 +1,52 @@
+.Widget {
+  width: 100%;
+  margin-top: 5px;
+  height: 96%;
+  border-radius: 10px;
+  background-color: var(--neutralLightPure);
+  padding: 24px;
+  border: 2px solid var(--neutralLightPure);
+  box-shadow: -1px 11px 36px -2px rgb(0 0 0 / 5%);
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: -1px 11px 36px -2px rgb(0 0 0 / 20%);
+
+    .widget-icon-bg { 
+
+      svg {
+        color: var(--brand-purple);
+      }
+    }
+
+    .widget-value {
+      color: var(--brand-purple);
+    }
+  }
+
+  .widget-icon-bg {
+    padding: 10px;
+    background-color: var(--neutralLight01);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    margin: 10px 0;
+
+    svg {
+      color: var(--neutralDarkPure);
+      font-size: 22px;
+    }
+  }
+
+  .widget-title {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .widget-value {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Poppins-Bold;
+  }
+
+}
